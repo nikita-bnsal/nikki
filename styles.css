@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imgInsta{
+    height: 100%;
+    width: 50%;
+}
+
+.instaSection{
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgFb{
+    height: 50%;
+    width: 5%;
+    margin-right: 2%;
+}
+
+.contWithFB{
+    background-color: rgb(57, 57, 252);
+    color: white;
+    border-radius: .2rem;
+    font-weight: 600;
+    border: none;
+    height: 2rem;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fbButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.et{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email{
+    width: 63%;
+    height: 1.7rem;
+    margin-top: 7%;
+    padding: 1%;
+}
+
+.password{
+    width: 63%;
+    height: 1.7rem;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+.forgotPass{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 83%;
+    margin-top: 3%;
+}
+
+.forgotText{
+    color: rgb(80, 80, 253);
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.btnLogin{
+    background-color: rgb(57, 57, 252);
+    color: white;
+    border-radius: .2rem;
+    font-weight: 600;
+    border: none;
+    height: 2rem;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+.btnSignup{
+    color: rgb(77, 77, 250);
+    font-weight: 500;
+    margin-left: 1%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgMeta{
+    width: 15%;
+}
