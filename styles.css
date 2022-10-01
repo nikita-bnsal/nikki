@@ -69,12 +69,17 @@
     padding: 1%;
 }
 
+.forgotPassword{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
 .forgotPass{
     display: flex;
     justify-content: end;
-    align-items: center;
-    width: 83%;
-    margin-top: 3%;
+    align-items: end;
+    width: 65%;
 }
 
 .forgotText{
