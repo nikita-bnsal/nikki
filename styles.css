@@ -120,13 +120,15 @@
     margin-left: 1%;
 }
 
-.footer{
+/* .footer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: absolute;
+    bottom: 0px;
 }
 
 .imgMeta{
     width: 15%;
-}
+} */
