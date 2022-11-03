@@ -1,44 +1,65 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.imgInsta{
-    height: 100%;
-    width: 50%;
-}
-
-.instaSection{
-    margin-top: 15%;
+.logo{
     display: flex;
     justify-content: center;
+    height: 1.5rem;
+    margin-top: 7%;
 }
 
-.imgFb{
-    height: 50%;
-    width: 5%;
-    margin-right: 2%;
+.details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
 }
 
-.contWithFB{
-    background-color: rgb(57, 57, 252);
-    color: white;
-    border-radius: .2rem;
-    font-weight: 600;
+#email{
+    padding: 3%;
     border: none;
-    height: 2rem;
-    width: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 4px;
+    background: rgb(232, 230, 230);
+    box-shadow: 0 8px 8px -6px rgb(204, 204, 204);
+    margin-bottom: 3%;
 }
 
-.fbButton{
+#pass{
+    padding: 3%;
+    border: none;
+    border-radius: 4px;
+    background: rgb(232, 230, 230);
+    box-shadow: 0 8px 8px -6px rgb(204, 204, 204);
+}
+
+.login{
+    height: 2.5rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 8%;
+    margin-top: 1rem;
+}
+
+.btnLogin{
+    background-color: rgb(39, 122, 255);
+    color: white;
+    border: none;
+    width: 90%;
+    font-weight: bold;
+    font-size: 1.05em;
+    border-radius: 5px;
+}
+
+.forgotPass{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.forgotPass>p{
+    color: blue;
 }
 
 .or{
@@ -46,91 +67,57 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 1.5rem;
 }
 
-.et{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.first{
+    width: 40%;
+}
+#or{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.second{
+    width: 40%;
 }
 
-.email{
-    width: 63%;
-    height: 1.7rem;
-    margin-top: 7%;
-    padding: 1%;
-}
-
-.password{
-    width: 63%;
-    height: 1.7rem;
-    margin-top: 2%;
-    padding: 1%;
-}
-
-.forgotPassword{
+.create{
+    height: 2.5rem;
     display: flex;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 1rem;
 }
 
-.forgotPass{
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    width: 65%;
-}
-
-.forgotText{
-    color: rgb(80, 80, 253);
-}
-
-.login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 7%;
-}
-
-.btnLogin{
-    background-color: rgb(57, 57, 252);
+.btnCreate{
+    background-color: rgb(8, 163, 8);
     color: white;
-    border-radius: .2rem;
-    font-weight: 600;
     border: none;
-    height: 2rem;
-    width: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 40%;
+    font-weight: bold;
+    font-size: 1.05em;
+    border-radius: 5px;
 }
 
-.signup{
+.languages{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 20%;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.firstPart>p{
+    color: rgb(133, 64, 252);
+    font-size: 0.9em;
+}
+.secondPart>p{
+    color: rgb(133, 64, 252);
+    font-size: 0.9em;
 }
 
-.btnSignup{
-    color: rgb(77, 77, 250);
-    font-weight: 500;
-    margin-left: 1%;
-}
-
-.footer{
+.meta{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
+    margin-top: 1rem;
 }
-
-.imgMeta{
-    width: 15%;
+.meta>p{
+    color: grey;
 }
