@@ -1,123 +1,108 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: sans-serif;
 }
 
-.logo{
+.instagram{
     display: flex;
     justify-content: center;
-    height: 1.5rem;
+    margin-top: 15%;
+}
+
+.imgInstagram{
+    width: 50%;
+}
+
+.fbButton{
     margin-top: 7%;
-}
-
-.details{
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-}
-
-#email{
-    padding: 3%;
-    border: none;
-    border-radius: 4px;
-    background: rgb(232, 230, 230);
-    box-shadow: 0 8px 8px -6px rgb(204, 204, 204);
-    margin-bottom: 3%;
-}
-
-#pass{
-    padding: 3%;
-    border: none;
-    border-radius: 4px;
-    background: rgb(232, 230, 230);
-    box-shadow: 0 8px 8px -6px rgb(204, 204, 204);
-}
-
-.login{
-    height: 2.5rem;
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    align-items: center;
 }
 
-.btnLogin{
-    background-color: rgb(39, 122, 255);
+.continue{
+    background-color: rgb(100, 100, 254);
+    font-size: 0.9em;
     color: white;
-    border: none;
-    width: 90%;
-    font-weight: bold;
-    font-size: 1.05em;
-    border-radius: 5px;
-}
-
-.forgotPass{
-    margin-top: 2%;
+    padding: 2%;
+    width: 70%;
+    border-radius: 0.3rem;
     display: flex;
     justify-content: center;
-}
-
-.forgotPass>p{
-    color: blue;
+    align-items: center;
 }
 
 .or{
+    margin-top: 4%;
+    margin-bottom: 4%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5rem;
 }
 
-.first{
-    width: 40%;
-}
-#or{
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-}
-.second{
-    width: 40%;
+.hrOr{
+    width: 31%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
-.create{
-    height: 2.5rem;
+.credentials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 73%;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.forgotPass{
+    color: rgb(74, 74, 252);
+    margin-left: 50%;
+    font-size: 0.9rem;
+}
+
+.btnLogin{
+    width: 78%;
+    color: white;
+    background-color: rgb(100, 100, 254);
+    padding: 2%;
+    margin-top: 5%;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.donot{
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 5%;
 }
 
-.btnCreate{
-    background-color: rgb(8, 163, 8);
-    color: white;
-    border: none;
-    width: 40%;
-    font-weight: bold;
-    font-size: 1.05em;
-    border-radius: 5px;
+.signUp{
+    color: rgb(74, 74, 252);
+    font-weight: 600;
 }
 
-.languages{
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
 }
-.firstPart>p{
-    color: rgb(133, 64, 252);
-    font-size: 0.9em;
-}
-.secondPart>p{
-    color: rgb(133, 64, 252);
-    font-size: 0.9em;
+
+.from{
+    margin-top: 3%;
+    font-size: 0.8rem;
 }
 
 .meta{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-.meta>p{
-    color: grey;
+    width: 12%;
 }
